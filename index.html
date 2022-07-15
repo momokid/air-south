@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Southwest Airline</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar contentPadding">
+        <!--Logo -->
+        <img src="images/logo.jpg" height="40px" />
 
-    <div class="main">
+        <!-- Top Menu -->
+        <ul class="topMenu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">List</a></li>
+          <li><a href="#">Cargo</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
 
-
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Southwest</h2>
-
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">List</a></li>
-                    <li><a href="#">Cargo</a></li>
-                    <li><a href="#">Business</a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="type to text">
-                <button class="btn"> <a href="#">search</a> </button>
-            </div>
-
+        <!-- Search input and button -->
+        <div class="searchField">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="formText" type="search" placeholder="Search" />
         </div>
-        <div class="content">
-        <h1>A sale for fall <br>
-            and our new fare <br>
-            with flexibility for all.</h1>
-            <p class="par">Restrictions and exclusions apply. <br>
-                Seats and days limited. <br>
-                Select markets. <br>
-                Book 7/12-7/21</p>
-            <button class="cn"> <a href="#">Start Booking</a></button>
-            </div>
-            <div class="form">
-                <h2>Login here</h2>
-                <input type="Email/Username" name="Email/Username" placeholder="Enter Email here">
-                <input type="password" name="" placeholder="Enter Password Here">
-                <button class="btnn"> <a href="#">Login</a> </button>
-                <p class="link">Don't have an account? <br>
-                <a href="#">Sign Up Now</a></p>
-                
-            </div>
-            <div class="footer">
-                
-                </div>
-                <div class="truth">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                       
-                    </ul>
-                </div>
-                
-    
-            </div>   
-        
-       
-    </div>
-        
-    
-    
-</body>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="leftSection">
+        <div class="infoSection">
+          <h2>A sale for fall.</h2>
+          <h4>our new fare comes with flexibility for all.</h4>
+          <div class="infoNote">
+            <span>Restrictions and exclusions apply. </span>
+            <span>Select markets. Book 7/12-7/21</span>
+            <span> Seats and days limited. </span>
+          </div>
+          <div>
+            <a href="#" class="btn btnBooking">Start Booking</a>
+          </div>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="formSection">
+          <form action="#" class="formContent" autocomplete="off">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email or phone number"
+            />
+            <input type="password" name="password" placeholder="Password" />
+            <button class="btn">Login</button>
+          </form>
+          <label class="formSignUp">
+            Don't have an account?
+            <a href="#">Sign Up Now</a>
+          </label>
+        </div>
+      </div>
+      <!-- <section class="contentPadding content">
+        <div class="infoSection">
+          <h2>A sale for fall.</h2>
+          <h4>our new fare comes with flexibility for all.</h4>
+          <div class="infoNote">
+            <span>Restrictions and exclusions apply. </span>
+            <span>Select markets. Book 7/12-7/21</span>
+            <span> Seats and days limited. </span>
+          </div>
+          <a href="#" class="btn btnBooking">Start Booking</a>
+        </div>
+
+        <div class="formSection">
+          <form action="#" class="formContent" autocomplete="off">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email or phone number"
+            />
+            <input type="password" name="password" placeholder="Password" />
+            <button class="btn">Login</button>
+          </form>
+          <label class="formSignUp">
+            Don't have an account?
+            <a href="#">Sign Up Now</a>
+          </label>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- footer -->
+    <!-- <footer class="contentPadding">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer> -->
+  </body>
 </html>
